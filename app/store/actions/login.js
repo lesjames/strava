@@ -1,3 +1,4 @@
+// @flow
 import { LOGIN, LOGOUT, SET_ACCESS_TOKEN } from "../constants/actionTypes";
 
 export function login() {
@@ -6,7 +7,7 @@ export function login() {
   };
 }
 
-export function setAccessToken(accessToken) {
+export function setAccessToken(accessToken: string) {
   return {
     type: SET_ACCESS_TOKEN,
     accessToken

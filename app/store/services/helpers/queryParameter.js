@@ -1,4 +1,8 @@
-export default function updateQueryStringParameter(uri, queryParameters) {
+// @flow
+export default function updateQueryStringParameter(
+  uri: string,
+  queryParameters: any
+): string {
   let buffer = uri;
 
   Object.keys(queryParameters).forEach(key => {

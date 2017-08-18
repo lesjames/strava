@@ -1,4 +1,5 @@
-export function msToTime(duration = 0) {
+// @flow
+export function msToTime(duration: number = 0): string {
   let seconds = parseInt(duration / 1000 % 60, 10);
   let minutes = parseInt(duration / (1000 * 60) % 60, 10);
   let hours = parseInt(duration / (1000 * 60 * 60) % 24, 10);

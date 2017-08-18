@@ -1,5 +1,5 @@
-/* @flow */
-export const getIconName = (value: string = "") => {
+// @flow
+export const getIconName = (value: string = ""): string => {
   const mapping = {
     distance: "flight",
     total_elevation_gain: "landscape",
